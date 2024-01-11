@@ -1,0 +1,227 @@
+/* ================== FONT Style ================== */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* ================== Commun Proprity ================== */
+:root{
+    --Body-color:hsl(0, 0%, 98%);
+    --First-color:hsl(197, 100%, 41%);
+    --Second-color:hsl(316, 97%, 54%);
+    --shadow-color: hsla(0, 2%, 75%, 0.302);
+    --title-color: hsl(229, 70%, 16%);
+    --text-color: hsl(229, 16%, 45%);
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--Body-color);
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--title-color);
+}
+p{
+    color: var(--text-color);
+}
+.Title{
+    width: fit-content;
+}   
+.Title::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--Second-color);
+}
+.Title::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -12px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--First-color);
+}
+#btnScroll{
+    background-color: var(--First-color);
+    padding: .5rem .7rem;
+    bottom: -100%;
+}
+/* ================== Nav Bar ================== */
+.navbar{
+    background-color: var(--Body-color);
+}
+.navbar img{
+    width: 130PX;
+    height: 75PX;
+}
+.navbar .nav-link{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: var(--Second-color);
+    color: var(--Body-color);
+}
+/* ================== Accueil ================== */
+.Accueil span{
+    color: var(--Second-color);
+} 
+.Accueil ul b{
+    font-size: 1rem;
+} 
+.Accueil a:hover{
+    text-decoration: underline !important;
+} 
+/* ================== Annonce ================== */
+.Annonce article img{
+    height: 350px;
+}
+.Annonce article p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+.Annonce .swiper-button-prev,
+.Annonce  .swiper-button-next{
+    width: initial;
+    height: initial;
+    background-color: var(--shadow-color);
+    font-size: .9rem;
+    transition: .4s;
+}
+/* ================== Club ================== */
+.Club article{
+    width: 800px;
+    box-shadow: 0px 1px 10px var(--shadow-color);
+}
+.Club article .club_logo img{
+    height: 200px;
+}
+.carousel-indicators {
+    bottom: -50px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 6px;
+    height: 6px;
+    background-color: var(--title-color);
+    border-radius: 100%;
+    margin: 0 3px;
+}
+.carousel-indicators .active{
+    transform: scale(1.3);
+}
+/* ================== Galerie ================== */
+.Galerie .galerie_container{
+    width: 75%;
+}
+.Galerie .img_home{
+    height: 450px;
+}
+.Galerie .Galerie_swiper .swiper-slide{
+    height: 130px;
+    margin: 0px !important;
+    opacity: .9;
+}
+/* ================== Footer ================== */
+footer i{
+    color: var(--First-color);
+}
+/* ===================== BreakPoint ==================== */
+/* --- xsmall device --- */
+@media screen and (width <= 576px) {
+    .navbar .navbar-nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        background-color: var(--Body-color);
+        padding-top: 5rem;
+        transition: .4s;
+    }
+    .navbar img{
+        width: 100PX;
+        height: 55PX;
+    }
+    .Accueil ul b{
+        font-size: 14px;
+    } 
+    .Accueil ul li{
+        font-size: 13px;
+    } 
+    .Accueil .PDF a{
+        font-size: .9rem;
+    }
+    .Club article{
+        width: 100%;
+        box-shadow: 0px 1px 10px transparent;
+    }
+    .Club article h4{
+        font-size: 1.3rem;
+    }
+    .Club article ul{
+        font-size: 1rem;
+    }
+    .Galerie .galerie_container{
+        width: 100%;
+    }
+    .Galerie .img_home{
+        height: 300px;
+    }
+    .Galerie .Galerie_swiper .swiper-slide{
+        height: 100px;
+    }
+}
+/* --- small device --- */
+@media screen and ( 577px <= width <= 768px) {
+    .navbar .navbar-nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 70%;
+        background-color: var(--Body-color);
+        padding-top: 5rem;
+        transition: .4s;
+        box-shadow: -15px 0px 15px 1px var(--shadow-color);
+    }
+    .Annonce .swiper-button-prev,
+    .Annonce  .swiper-button-next{
+        opacity: 1;
+    }
+    .Club article{
+        width: fit-content;
+    }
+    .Galerie .galerie_container{
+        width: 100%;
+    }
+    .Galerie .img_home{
+        height: 380px;
+    }
+    .Galerie .Galerie_swiper .swiper-slide{
+        height: 100px;
+    }
+}
+/* --- meduim device --- */
+@media screen and ( 769px <= width <= 992px) {
+    .navbar .navbar-nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 60%;
+        background-color: var(--Body-color);
+        padding-top: 5rem;
+        transition: .4s;
+        box-shadow: -15px 0px 15px 1px var(--shadow-color);
+    }
+    .Club article{
+        width: fit-content;
+    }
+    .Galerie .galerie_container{
+        width: 95%;
+    }
+}

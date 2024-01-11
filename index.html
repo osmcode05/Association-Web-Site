@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association Des Étudiantes</title>
+    <!-- < ================ swiper css file ==================== > -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- < ================ bootstrap css file ==================== > -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- < ================ css file ==================== > -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- < ================ Font Awesome CDN link ==================== > -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- < ================ NavBar ==================== > -->
+    <nav class="navbar navbar-expand-lg p-0 shadow-sm sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#Accueil">
+            <img src="img/logo.jpeg" class="img-fluid" alt="Logo">
+          </a>
+            <ul class="navbar-nav nav nav-pills align-items-center gap-md-5 gap-3">
+              <li class="nav-item">
+                <a class="nav-link p-2" href="#Accueil">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2" href="#Annonce">Annonce</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2" href="#Club">Club</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2" href="#Galerie">Galerie</a>
+              </li>
+            </ul>
+            <!-- button open -->
+            <i id="menu" onclick="toggele()" class="fa-solid fa-bars d-lg-none z-3 fs-1"></i>
+            <!-- button close -->
+            <i id="close" onclick="toggele()" class="fa-solid fa-xmark d-lg-none z-3 d-none fs-1"></i>
+        </div>
+    </nav>
+
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+    <!-- < ================ Accueil ==================== > -->
+        <section id="Accueil" class="Accueil">
+            <div class="container pt-5 pb-5">
+                <h2 class="text-center text-capitalize">Bienvenue dans l'association des étudiantes <span>ISPITS</span> Agadir</h2>
+                <p class="mt-4">L'Association des Élèves Dynamiques (AED) est une organisation scolaire dédiée à promouvoir l'engagement, l'inclusion et le bien-être au sein de notre établissement. À travers des activités diverses telles que des ateliers éducatifs, des événements sociaux et des projets communautaires, nous œuvrons à créer un environnement propice à l'épanouissement de chaque élève. Rejoignez-nous pour partager des expériences enrichissantes et contribuer à bâtir une communauté éducative dynamique et solidaire.(Exemple)</p>
+                <div class="row pt-4 pb-4">
+                    <div class="col-lg-6 col-12">
+                        <h3>Histoire De L'association</h3>
+                        <p class="mt-4">Créée en 2014, notre association scolaire, "Les Pionniers du Savoir", a pris son envol avec passion et détermination. Depuis, nous avons marqué l'année 2022 avec des projets novateurs tels que des ateliers technologiques, des séjours éducatifs et une campagne de sensibilisation environnementale. Rejoignez-nous dès maintenant pour participer à cette aventure unique et contribuer à façonner l'avenir de notre communauté éducative.(Exemple)</p>
+                    </div>
+                    <div class="col-lg-6 col-12 border-start ps-lg-5">
+                        <h3>Membres d'association</h3>
+                        <ul class="lh-lg list-unstyled ps-md-4 ps-2  mt-4 text-secondary">
+                            <li><b>Président</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: &nbsp; &nbsp; Soufyane Fahsi</li>
+                            <li><b>Vice-président</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: &nbsp; &nbsp; Aïcha Taq Taq</li>
+                            <li><b>Écrivain</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: &nbsp; &nbsp; Hajar El jayid</li>
+                            <li><b>Rédacteur adjoint</b> &nbsp; &nbsp; : &nbsp; &nbsp; Fatima Al-Zahra Al-Kreidani</li>
+                            <li><b>Trésorier</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: &nbsp; &nbsp; Safa El-aank</li>
+                            <li><b>Trésorier adjoint</b> &nbsp; &nbsp; &nbsp; &nbsp;: &nbsp; &nbsp; Mina Buikro</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="PDF row border-top pt-4 text-center">
+                    <div class="col-6 border-end">
+                        <a href="/pdf/البرنامج الانتخابي-2_240102_213227.pdf" class="fw-bold text-secondary text-decoration-none d-flex align-items-center flex-wrap justify-content-center">            
+                            <img src="https://assets.jimstatic.com/s/img/cc/icons/pdf.png" class="p-3" alt="Télécharger">
+                            Programme électoral
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="/pdf/القانون الأساسي 2023.pdf" class="fw-bold text-secondary text-decoration-none d-flex align-items-center flex-wrap justify-content-center">            
+                            <img src="https://assets.jimstatic.com/s/img/cc/icons/pdf.png" class="p-3"  alt="Télécharger">
+                            La loi fondamentale
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- < ================ Annonce ==================== > -->
+        <section id="Annonce" class="Annonce">
+            <div class="container pt-4 pb-4">
+                <h1 class="Title position-relative m-auto mb-5">Annonce</h1>
+                    <div class="Annonce_annonce swiper mt-4">
+                        <div class="swiper-wrapper">
+                            <article class="bg-white rounded p-3 swiper-slide">
+                                <a href="img/Annonce/annonce-2.jpeg">
+                                <img src="img/Annonce/annonce-2.jpeg" class="w-100" alt="Annonce"> 
+                                </a>
+                                <h4 class="pt-4 pb-2">Title test</h4>
+                                <p class="text-black-50"><i class="fa-regular fa-clock fs-6"></i> 23 Décembre 2023</p>
+                            </article>
+                            <article class="bg-white rounded p-3 swiper-slide">
+                                <a href="img/Annonce/annonce-1.jpeg">
+                                <img src="img/Annonce/annonce-1.jpeg" class="w-100" alt="Annonce"> 
+                                </a>
+                                <h4 class="pt-4 pb-2">Title test</h4>
+                                <p class="text-black-50"><i class="fa-regular fa-clock fs-6"></i> 07 Décembre 2023</p>
+                            </article>
+                            <article class="bg-white rounded p-3 swiper-slide">
+                                <a href="img/Annonce/annonce-3.jpeg">
+                                <img src="img/Annonce/annonce-3.jpeg" class="w-100" alt="Annonce"> 
+                                </a>
+                                <h4 class="pt-4 pb-2">Title test</h4>
+                                <p class="text-black-50"><i class="fa-regular fa-clock fs-6"></i> 18 Septembre 2005</p>
+                            </article>
+                            <article class="bg-white rounded p-3 swiper-slide">
+                                <a href="img/Annonce/annonce-4.jpeg">
+                                <img src="img/Annonce/annonce-4.jpeg" class="w-100" alt="Annonce"> 
+                                </a>
+                                <h4 class="pt-3 pb-3">Title test</h4>
+                                <p class="text-black-50"><i class="fa-regular fa-clock fs-6"></i> 18 Septembre 2005</p>
+                            </article>
+                        </div>
+                        <div class="swiper-button-prev rounded p-3 start-0">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="swiper-button-next rounded p-3 end-0">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    <!-- < ================ Club ==================== > -->
+        <section id="Club" class="Club pt-4 pb-4">
+                <h1 class="Title position-relative m-auto mb-5">Club</h1>
+                <div id="carouselExampleInterval" class="carousel slide h-100 w-100" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3"></button>
+                    </div>
+                    <div class="carousel-inner w-100 m-auto">
+                      <div class="carousel-item p-1 active" data-bs-interval="4000">
+                        <article class="d-flex flex-md-row flex-column m-auto p-md-3 rounded">
+                            <div class="club_logo p-2 p-3">
+                                <img src="img/club_logo-2.jpeg" class="w-100 rounded" alt="logo">
+                            </div>
+                            <div class="flex-grow-1 pt-3 ps-4">
+                                <h4 class="text-info">Club social - <span class="fs-5 opacity-50">ISPITS Agadir</span></h4>
+                                <ul class="lh-lg list-unstyled text-secondary">
+                                    <li><b>Domaine d'activités </b> &nbsp; : &nbsp; Côté social</li>
+                                    <li><b>Responsable</b> &nbsp; : &nbsp; Soufian Fahsi</li>
+                                    <li><b>Contact</b> &nbsp; : &nbsp; 06 24 94 26 60</li>
+                                    <li><b>Email</b> &nbsp; : &nbsp; Exemple@gmail.com</li>
+                                    <li><b>Web</b> &nbsp; : &nbsp; https://www.instagram.com/fahssi.soufiane23</li>
+                                </ul>
+                            </div>
+                        </article>
+                      </div>
+                      <div class="carousel-item p-1">
+                        <article class="d-flex flex-md-row flex-column m-auto p-md-3 rounded">
+                            <div class="club_logo p-3">
+                                <img src="img/club_logo-1.jpeg" class="w-100 rounded" alt="logo">
+                            </div>
+                            <div class="flex-grow-1 pt-3 ps-4">
+                                <h4 class="text-info">Club Culturel - <span class="fs-5 opacity-50">ISPITS Agadir</span></h4>
+                                <ul class="lh-lg list-unstyled text-secondary">
+                                    <li><b>Domaine d'activités </b> &nbsp; : &nbsp; Domaine Culturel</li>
+                                    <li><b>Responsable</b> &nbsp; : &nbsp; OUAHBI ABDELATI</li>
+                                    <li><b>Contact</b> &nbsp; : &nbsp; 07 06 38 55 91</li>
+                                    <li><b>Email</b> &nbsp; : &nbsp; ouahbiabdelaati@gmail.com</li>
+                                    <li><b>Web</b> &nbsp; : &nbsp; https://www.instagram.com/clubculturel_ispitsa</li>
+                                </ul>
+                            </div>
+                        </article>
+                      </div>
+                      <div class="carousel-item p-1">
+                        <article class="d-flex flex-md-row flex-column m-auto p-md-3 rounded">
+                            <div class="club_logo p-3">
+                                <img src="img/club_logo-3.jpg" class="w-100 rounded" alt="logo">
+                            </div>
+                            <div class="flex-grow-1 pt-3 ps-4">
+                                <h4 class="text-info">Club sportif - <span class="fs-5 opacity-50">ISPITS Agadir</span></h4>
+                                <ul class="lh-lg list-unstyled text-secondary">
+                                    <li><b>Domaine d'activités </b> &nbsp; : &nbsp; Sport et éducation</li>
+                                    <li><b>Responsable</b> &nbsp; : &nbsp; Zakaria Ahnaine</li>
+                                    <li><b>Contact</b> &nbsp; : &nbsp; 06 35 89 77 31</li>
+                                    <li><b>Email</b> &nbsp; : &nbsp; Exemple@gmail.com</li>
+                                    <li><b>Web</b> &nbsp; : &nbsp; https://www.instagram.com/zakariaahn</li>
+                                </ul>
+                            </div>
+                        </article>
+                      </div>
+                      <div class="carousel-item p-1">
+                        <article class="d-flex flex-md-row flex-column m-auto p-md-3 rounded">
+                            <div class="club_logo p-3">
+                                <img src="img/club_logo-4.png" class="w-100 rounded bg-white" alt="logo">
+                            </div>
+                            <div class="flex-grow-1 pt-3 ps-4">
+                                <h4 class="text-info">Club technologique - <span class="fs-5 opacity-50">ISPITS Agadir</span></h4>
+                                <ul class="lh-lg list-unstyled text-secondary">
+                                    <li><b>Domaine d'activités </b>: Informatique - technologie</li>
+                                    <li><b>Responsable</b> &nbsp; : &nbsp; Khaled Ishaq</li>
+                                    <li><b>Contact</b> &nbsp; : &nbsp; 06 47 46 48 47</li>
+                                    <li><b>Email</b> &nbsp; : &nbsp; email@gmail.com</li>
+                                    <li><b>Web</b> &nbsp; : &nbsp; https://www.instagram.com/khalidov_44</li>
+                                </ul>
+                            </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+        </section>
+    <!-- < ================ Galerie ==================== > -->
+        <section id="Galerie" class="Galerie">
+            <div class="container pt-5 pb-5">
+                <h1 class="Title position-relative m-auto mb-5">Galerie</h1>
+                <div class="galerie_container m-auto">
+                            <div class="img_home position-relative w-100">
+                                <img src="img/Galerie/Galerie-2.jpeg" id="img_home" class="w-100 h-100" alt="image">
+                            </div>
+                            <div class="Galerie_swiper swiper mt-1">
+                                <div class="swiper-wrapper border">
+                                    <img src="img/Galerie/Galerie-1.jpeg" onclick="change(this.src)" class="swiper-slide" alt=".">
+                                    <img src="img/Galerie/Galerie-2.jpeg" onclick="change(this.src)" class="swiper-slide" alt=".">
+                                    <img src="img/Galerie/Galerie-3.jpeg" onclick="change(this.src)" class="swiper-slide" alt=".">
+                                    <img src="img/Galerie/Galerie-4.jpg" onclick="change(this.src)" class="swiper-slide" alt=".">
+                                    <img src="img/Galerie/Galerie-5.jpeg" onclick="change(this.src)" class="swiper-slide" alt=".">
+                                </div>
+                                <div class="swiper-button-prev rounded p-3 start-0">
+                                    <i class="fa-solid fa-chevron-left text-white-50 fs-3"></i>
+                                </div>
+                                <div class="swiper-button-next rounded p-3 end-0">
+                                    <i class="fa-solid fa-chevron-right text-white-50 fs-3"></i>
+                                </div>
+                            </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- < ================ footer ==================== > -->
+    <footer>
+        <div class="container">
+            <div class="row pt-4 pb-4 gap-sm-0 gap-4">
+                <div class="col-sm-6 col-12 text-sm-start text-center">
+                    <h4 class="">Association Des Étudiantes</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li>Route de Marrakech à côté <br> de l'hôpital Al Hassan || , AGADIR</li>
+                        <li class="mt-2 mb-2">Téléphone :  06 24 94 26 60</li>
+                        <li>Email : Exemple@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-12 text-center">
+                    <h4 class="mb-3">Suivez-nous</h4>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a class="text-decoration-none" href="https://www.facebook.com/profile.php?id=100069216678166">
+                            <i class="fa-brands fa-square-facebook fs-4"></i>
+                        </a>
+                        <a class="text-decoration-none" href="https://www.instagram.com/association_ispits_agadir">
+                            <i class="fa-brands fa-instagram fs-4"></i>
+                        </a>
+                        <a class="text-decoration-none" href="#">
+                            <i class="fa-brands fa-youtube fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mb-4">2024 © Copyright</p>
+        </div>
+    </footer>
+    <!-- < ================ Button scroll Up ==================== > -->
+    <button class="position-fixed end-0 border-0 text-white rounded m-3" id="btnScroll">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- < ================ swiper js file ==================== > -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- < ================ bootstrap js file ================= > -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- < ================ js file ==================== > -->
+    <script src="js/main.js"></script>
+</body>
+</html>
